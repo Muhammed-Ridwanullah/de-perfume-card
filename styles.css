@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f2ebe3;
+}
+p:not(.btn p){
+    font-size: 14px;
+    color: #6c7289;
+    padding-bottom: .75rem;
+}
+h1{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family:  'Fraunces', serif;
+    padding-bottom: 0.25rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+.card-container {
+    width: 15rem;
+    margin: 0 auto;
+}
+.logo > img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    margin-top: 2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card-content{
+    margin-bottom: 2rem;
+    padding: 1.25rem;
+    background-color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-price{
+    display: flex;
+
+}
+.card-price h1{
+    color: #3c8067;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    padding-right: 1rem;
+}
+.card-price p{
+    align-self: center;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+    background: #3c8067;
+    border: none;
+    margin-top: 1rem;
+    padding: 10px 0;
+}
+.btn p {
+    color: white;
+    padding-left: 10px;
+}
+@media screen and (min-width: 420px){
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo > img{
+        height: 25rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .card-content{
+        margin-top: 4rem;
+        height: 24.99rem;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+}
